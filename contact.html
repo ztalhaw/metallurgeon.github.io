@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Metallurgeon - Contact</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</head>
+
+<body class="bg-gray-100">
+
+
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow">
+
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="index.html"
+                class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-indigo-500 to-indigo-400 bg-clip-text text-transparent">
+                Metallurgeon
+            </a>
+
+            <div class="flex gap-6 items-center">
+
+                <a href="index.html" class="hover:text-indigo-600">
+                    Home
+                </a>
+
+                <a href="about.html" class="hover:text-indigo-600">
+                    About
+                </a>
+
+                <a href="contact.html" class="text-indigo-600 font-semibold">
+                    Contact
+                </a>
+
+                <a href="signup.html" class="hover:text-indigo-600">
+                    Sign Up
+                </a>
+
+                <a href="signin.html"
+                    class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">
+                    Sign In
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HEADER -->
+    <section class="bg-gradient-to-r from-indigo-700 via-indigo-600 to-indigo-500 text-white text-center py-20">
+
+        <h1 class="text-5xl font-bold mb-4">
+            Contact Us
+        </h1>
+
+        <p class="text-lg text-indigo-100">
+            Get in touch with Metallurgeon for industrial welding solutions.
+        </p>
+
+    </section>
+
+
+    <!-- CONTACT CARDS -->
+    <section class="max-w-6xl mx-auto px-6 py-12">
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+            <!-- CARD 1 -->
+            <div class="bg-white rounded-xl shadow-md p-7 text-center">
+
+                <div
+                    class="w-14 h-14 mx-auto bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-2xl">
+                    ✉
+                </div>
+
+                <h3 class="text-xl font-bold text-indigo-700 mt-5">
+                    Email
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Contact our team for inquiries.
+                </p>
+
+                <a href="mailto:info@metallurgeon.com"
+                    class="text-indigo-600 font-semibold block mt-3">
+                    info@metallurgeon.com
+                </a>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="bg-white rounded-xl shadow-md p-7 text-center">
+
+                <div
+                    class="w-14 h-14 mx-auto bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-2xl">
+                    ☎
+                </div>
+
+                <h3 class="text-xl font-bold text-indigo-700 mt-5">
+                    Phone
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Speak with our representatives.
+                </p>
+
+                <p class="text-indigo-600 font-semibold mt-3">
+                    +92 XXX XXXXXXX
+                </p>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="bg-white rounded-xl shadow-md p-7 text-center">
+
+                <div
+                    class="w-14 h-14 mx-auto bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-2xl">
+                    📍
+                </div>
+
+                <h3 class="text-xl font-bold text-indigo-700 mt-5">
+                    Location
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Pakistan
+                </p>
+
+                <p class="text-indigo-600 font-semibold mt-3">
+                    Industrial Services
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT FORM -->
+    <section class="max-w-5xl mx-auto px-6 pb-16">
+
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-10">
+
+            <h2 class="text-3xl font-bold text-indigo-700 mb-2">
+                Send Us a Message
+            </h2>
+
+            <p class="text-gray-500 mb-8">
+                Fill in the form below and our team will get back to you.
+            </p>
+
+
+            <!-- FORMSPREE FORM -->
+
+            <form action="https://formspree.io/f/xgavavpd"
+                method="POST"
+                class="space-y-6"
+                onsubmit="return validateForm()">
+
+
+                <!-- NAME -->
+                <div>
+
+                    <label for="name"
+                        class="block mb-2 text-sm font-semibold text-gray-700">
+                        Full Name
+                    </label>
+
+                    <input type="text"
+                        id="name"
+                        name="name"
+                        required
+                        minlength="3"
+                        placeholder="Enter your full name"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none">
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div>
+
+                    <label for="email"
+                        class="block mb-2 text-sm font-semibold text-gray-700">
+                        Email Address
+                    </label>
+
+                    <input type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="example@email.com"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none">
+
+                </div>
+
+
+                <!-- SUBJECT -->
+                <div>
+
+                    <label for="subject"
+                        class="block mb-2 text-sm font-semibold text-gray-700">
+                        Subject
+                    </label>
+
+                    <input type="text"
+                        id="subject"
+                        name="subject"
+                        required
+                        minlength="5"
+                        placeholder="What would you like to discuss?"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none">
+
+                </div>
+
+
+                <!-- SERVICE SELECT -->
+                <div>
+
+                    <label for="service"
+                        class="block mb-2 text-sm font-semibold text-gray-700">
+                        Service Required
+                    </label>
+
+                    <select id="service"
+                        name="service"
+                        required
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 bg-white focus:ring-2 focus:ring-indigo-500 outline-none">
+
+                        <option value="">
+                            Select a service
+                        </option>
+
+                        <option value="Electrodes">
+                            Electrodes
+                        </option>
+
+                        <option value="Welding Wires">
+                            Welding Wires
+                        </option>
+
+                        <option value="Hammer Repair">
+                            Hammer Repair
+                        </option>
+
+                        <option value="Roller Repair">
+                            Roller Repair
+                        </option>
+
+                        <option value="Sleeve Repair">
+                            Sleeve Repair
+                        </option>
+
+                        <option value="Table Repair">
+                            Table Repair
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- MESSAGE -->
+                <div>
+
+                    <label for="message"
+                        class="block mb-2 text-sm font-semibold text-gray-700">
+                        Message
+                    </label>
+
+                    <textarea id="message"
+                        name="message"
+                        rows="5"
+                        required
+                        minlength="10"
+                        placeholder="Describe your requirements..."
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none"></textarea>
+
+                </div>
+
+
+                <!-- BUTTON -->
+                <button type="submit"
+                    class="w-full bg-indigo-600 text-white font-semibold py-3 rounded-lg hover:bg-indigo-700 transition">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="max-w-5xl mx-auto px-6 pb-16">
+
+        <h2 class="text-3xl font-bold text-indigo-700 text-center mb-8">
+            Contact FAQ
+        </h2>
+
+        <div class="space-y-4">
+
+            <details class="bg-white shadow rounded-lg p-5">
+
+                <summary class="font-semibold text-indigo-700 cursor-pointer">
+                    Can I ask about a specific welding application?
+                </summary>
+
+                <p class="text-gray-600 mt-3">
+                    Yes. Use the contact form to describe your machinery,
+                    component and welding requirements.
+                </p>
+
+            </details>
+
+
+            <details class="bg-white shadow rounded-lg p-5">
+
+                <summary class="font-semibold text-indigo-700 cursor-pointer">
+                    Do you supply welding electrodes and wires?
+                </summary>
+
+                <p class="text-gray-600 mt-3">
+                    Yes. Metallurgeon specializes in the import and supply
+                    of electrodes and welding wires.
+                </p>
+
+            </details>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white text-center py-8">
+
+        <h2 class="text-xl font-bold">
+            Metallurgeon
+        </h2>
+
+        <div class="flex justify-center gap-6 my-4">
+
+            <a href="index.html" class="hover:text-indigo-400">
+                Home
+            </a>
+
+            <a href="about.html" class="hover:text-indigo-400">
+                About
+            </a>
+
+            <a href="contact.html" class="text-indigo-400">
+                Contact
+            </a>
+
+        </div>
+
+        <p class="text-gray-400">
+            © 2026 Metallurgeon. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- FORM VALIDATION -->
+    <script>
+
+        function validateForm() {
+
+            let name = document.getElementById("name").value.trim();
+            let subject = document.getElementById("subject").value.trim();
+            let message = document.getElementById("message").value.trim();
+
+            if (name.length < 3) {
+                alert("Please enter a valid name.");
+                return false;
+            }
+
+            if (subject.length < 5) {
+                alert("Subject must contain at least 5 characters.");
+                return false;
+            }
+
+            if (message.length < 10) {
+                alert("Message must contain at least 10 characters.");
+                return false;
+            }
+
+            return true;
+        }
+
+    </script>
+
+</body>
+</html>
